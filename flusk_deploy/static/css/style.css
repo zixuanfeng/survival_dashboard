@@ -1,0 +1,254 @@
+/* Optional: If you want to keep the same margins and paddings as before */
+.Box {
+  margin-left: 50px;
+}
+
+.Box, .Box-header {
+  box-sizing: border-box;
+}
+
+.CustomBox {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.CustomBoxHeader th {
+  background-color: #f6f8fa;
+  border-bottom: 2px solid #e1e4e8;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.CustomBoxRow td {
+  padding: 17px 15px;
+  border-bottom: 1px solid #e1e4e8;
+  vertical-align: top;  
+  min-height: 200px;  
+}
+
+.login-link {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.bubble {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.tooltip-trigger {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+
+/* Set equal flex-basis for the three columns */
+.col-12 {
+  flex: 1;
+}
+
+/* Optional: If you want to align the content inside each column */
+.Box-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.login-table th, .login-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.login-table th {
+  background-color: #f2f2f2;
+}
+
+/* Optional: If you want to add space between columns */
+.Box-row > div {
+  margin-right: 10px;
+}
+
+/* Default style */
+.UnderlineNav-item {
+  font-weight: normal;
+}
+
+/* Bold style when the radio button is checked */
+input[type="radio"]:checked + .UnderlineNav-item {
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+
+input[type="radio"]:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  background-color: #007BFF;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+input[type="radio"]:checked:before {
+  opacity: 1;
+}
+
+
+
+.CustomBox, .CustomBoxRow {
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: none !important;
+  list-style-type: none;
+}
+
+
+.color-blend-bar {
+    width: 30%;  /* Adjust width based on your design preference */
+    height: 20px;
+    background: linear-gradient(to right, red, green);
+    position: relative;
+}
+.indicator {
+    position: absolute;
+    top: 0;
+    left: 0; /* Adjust this value dynamically in JS to indicate the position on the blend bar */
+    height: 100%;
+    width: 2px;
+    background-color: white;
+}
+
+.c-index-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Distributes the items evenly with equal space between them */
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.c-index-title {
+    font-weight: bold;
+    margin-right: 20px; /* spacing between title and description */
+}
+
+
+.c-index-description {
+    margin-right: 20px; /* spacing between description and color bar */
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+#variable-selection-form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#loadingBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#usedVariables {
+  margin-top: 20px;
+  background: #e9ecef;
+  padding: 15px;
+  border-radius: 4px;
+}
